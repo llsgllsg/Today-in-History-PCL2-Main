@@ -25,7 +25,7 @@ jobs:
       - name: Configure rclone for WebDAV
         run: |
           rclone config create alist_webdav webdav \
-            url http://pclhomeplazaoss.lingyunawa.top:26993/dav \
+            url http://pclhomeplazaoss.lingyunawa.top:5244/dav \
             user llsgllsg \
             pass llsgllsg@Alist
 
