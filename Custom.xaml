@@ -1,0 +1,57 @@
+﻿<local:MyCard Margin="0,-6,0,12" Title="欢迎"> 
+     <StackPanel Margin="24,35,24,15">
+          <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
+               Foreground="{DynamicResource ColorBrush2}" FontSize="25"
+               Text="历史上的今天" />
+          <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" />
+          <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center"
+               Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
+          <local:MyIconTextButton Margin="0,5,5,6" Height="35" HorizontalAlignment="Right"
+        Text="刷新" EventType="刷新主页" Grid.Column="1"
+        LogoScale="0.8" ColorType="Highlight"
+        Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z" />
+     </StackPanel>
+</local:MyCard> 
+
+
+<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+	<local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+            Title="清理垃圾" Info="清理PCL使用时的垃圾" EventType="清理垃圾" Type="Clickable" />
+	<local:MyListItem  Margin="30,2,-5,8"
+                    Logo="pack://application:,,,/images/Blocks/Fabric.png" Title="作者博客" Info="打开作者博客"
+                    EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+</StackPanel>
+
+
+
+<local:MyCard Title="事件：【丹麦国王和挪威国王克里斯蒂安四世出生】时间：【1577年04月12日】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="丹麦--挪威国王（1588年―1648年在位）。弗雷德里克二世之子，即位初由母后摄政，1596年亲政，执政期间，采取措施促进工商业的发展，扩大哥本哈根的港口，建立新城市，废除汉萨同盟的特权。" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="事件：【法国天文学家查尔斯·梅西耶逝世】时间：【1817年04月12日】类型【死亡】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="查尔斯·梅西耶（Charles Messier，1730—1817）是法国天文学家。他的成就在于给星云、星团和星系编上了号码，并制作了著名的“梅西耶星团星云列表”。" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="事件：【法国小说家爱弥尔·左拉出生】时间：【1840年04月12日】类型【死亡】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="爱弥尔·左拉（法语：émile Zola，1840年4月2日－1902年9月29日），法国著名的自然主义小说家和理论家，自然主义文学流派创始人与领袖。1902年9月28日，左拉在巴黎的寓所因煤气中毒逝世。" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="事件：【美国总统哈定拒绝参加国际联盟】时间：【1921年04月12日】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="沃伦·甘梅利尔·哈定为美国第29位总统( 任期1921年3月4日--1923年8月2日)，生于俄亥俄州，卒于任期内。哈丁与弗洛伦斯·克林·德沃尔夫于1891年结婚，婚后，弗洛伦斯经营报纸来支持哈丁投身政界。" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="事件：【诺贝尔文学奖获得者泰戈尔来华讲学并访问中国】时间：【1924年04月12日】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="拉宾德拉纳特 · 泰戈尔（1861年—1941年），印度著名诗人、文学家、社会活动家、哲学家和印度民族主义者。1861年5月7日，拉宾德拉纳特·泰戈尔出生于印度加尔各答一个富有的贵族家庭。" />
+    </StackPanel>
+</local:MyCard>
