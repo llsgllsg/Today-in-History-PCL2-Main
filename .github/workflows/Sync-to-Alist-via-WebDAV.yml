@@ -19,32 +19,74 @@ jobs:
       # Install rclone
       - name: Install rclone
         run: |
+          echo "开始安装 rclone..."
           curl https://rclone.org/install.sh | sudo bash
+          if [ $? -ne 0 ]; then
+            echo "安装 rclone 失败！"
+            exit 1
+          fi
+          echo "rclone 安装成功。"
 
       # Configure rclone for WebDAV
       - name: Configure rclone for WebDAV
         run: |
+          echo "开始配置 rclone 以使用 WebDAV..."
           rclone config create alist_webdav webdav \
             url http://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav \
             user ${{ secrets.ALIST_USERNAME }} \
             pass ${{ secrets.ALIST_PASSWORD }}
+          if [ $? -ne 0 ]; then
+            echo "配置 rclone 失败！"
+            exit 1
+          fi
+          echo "rclone 配置成功。"
 
       # Check current working directory (debugging step)
       - name: Print current working directory
         run: |
+          echo "当前工作目录信息："
           pwd
           ls -al
+
+      # Try to connect to the WebDAV server before deletion
+      - name: Test WebDAV connection
+        run: |
+          echo "尝试连接 WebDAV 服务器..."
+          if ! telnet ${{ secrets.WEBDAV_HOST }} ${{ secrets.WEBDAV_PORT }} <<< $'\n' &>/dev/null; then
+            echo "无法连接到 WebDAV 服务器：http://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav/"
+            exit 1
+          fi
+          echo "成功连接到 WebDAV 服务器。"
 
       # Clear the target folder on Alist WebDAV
       - name: Clear target folder on Alist WebDAV
         run: |
+          echo "开始清理 Alist WebDAV 目标文件夹..."
           rclone delete alist_webdav:/ --rmdirs  # Deletes all files and empty directories from the target folder
+          if [ $? -ne 0 ]; then
+            echo "清理目标文件夹失败！"
+            exit 1
+          fi
+          echo "目标文件夹清理成功。"
 
       # Sync all files to Alist WebDAV (sync the entire repo)
       - name: Sync all files to Alist
         run: |
+          echo "开始将所有文件同步到 Alist WebDAV..."
           rclone copy ./ alist_webdav:/ --checksum --size-only --retries 3  # Force update every time
+          if [ $? -ne 0 ]; then
+            echo "文件同步失败！"
+            exit 1
+          fi
+          echo "文件同步成功。"
 
       # Optionally, clean up rclone configuration (for security)
       - name: Clean up rclone config
-        run: rm -rf ~/.config/rclone
+        run: |
+          echo "开始清理 rclone 配置..."
+          rm -rf ~/.config/rclone
+          if [ $? -ne 0 ]; then
+            echo "清理 rclone 配置失败！"
+            exit 1
+          fi
+          echo "rclone 配置清理成功。"
