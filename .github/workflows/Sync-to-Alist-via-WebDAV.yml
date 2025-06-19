@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-  # 添加 workflow_dispatch 事件以支持手动触发
-  workflow_dispatch:
 
 jobs:
   sync_to_alist:
