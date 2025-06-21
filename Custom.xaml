@@ -23,7 +23,6 @@
                     EventType="打开网页" EventData="https://llsgllsg.github.io/llsgllsgBK.github.io/" Type="Clickable" />
 </StackPanel>
 
-
 <local:MyCard Title="事件：【日本大名织田信长逝世】时间：【1582年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
@@ -63,4 +62,3 @@
                     EventType="打开网页" EventData="http://baike.baidu.com/view/161382.htm" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
-</ResourceDictionary>
