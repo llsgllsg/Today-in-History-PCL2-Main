@@ -1,7 +1,8 @@
+#别看，deepseek生成的
 import requests
 import json
 import os
-import sys  # 添加这行导入
+import sys
 from datetime import datetime
 
 def get_today_events():
@@ -26,9 +27,6 @@ def translate_event_type(event_type):
 
 def generate_xaml_content(api_data):
     """生成要追加的XAML内容"""
-    today = datetime.now()
-    date_str = f"{today.year}年{today.month}月{today.day}日"
-    
     xaml_entries = []
     for event in api_data.get('data', [])[:5]:  # 只取前5个事件
         event_type = translate_event_type(event['type'])
@@ -41,7 +39,6 @@ def generate_xaml_content(api_data):
     </StackPanel>
 </local:MyCard>"""
         xaml_entries.append(xaml_entry)
-    
     return "\n".join(xaml_entries)
 
 def process_files():
@@ -58,17 +55,15 @@ def process_files():
             raise FileNotFoundError("temp.xaml文件不存在")
         
         with open('temp.xaml', 'r', encoding='utf-8') as f:
-            temp_content = f.read()
+            temp_content = f.read().strip()  # 去除首尾空白
         
         # 3. 生成要追加的内容
         new_content = generate_xaml_content(api_data)
         
-        # 4. 确保temp.xaml有正确的结束标签
-        if '</ResourceDictionary>' not in temp_content:
-            temp_content += '\n</ResourceDictionary>'
+        # 4. 直接追加新内容（不再处理结束标签）
+        final_content = f"{temp_content}\n{new_content}"
         
-        
-        # 6. 写入Custom.xaml
+        # 5. 写入Custom.xaml
         with open('Custom.xaml', 'w', encoding='utf-8') as f:
             f.write(final_content)
         
