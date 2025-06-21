@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import sys  # 添加这行导入
 from datetime import datetime
 
 def get_today_events():
