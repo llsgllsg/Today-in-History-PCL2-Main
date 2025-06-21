@@ -24,34 +24,43 @@
 </StackPanel>
 
 
+<local:MyCard Title="事件：【日本大名织田信长逝世】时间：【1582年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="30,2,-5,8"
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
+                    EventType="打开网页" EventData="http://baike.baidu.com/subview/4625/9838568.htm" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
 
-<local:MyCard Title="事件：【丹麦国王和挪威国王克里斯蒂安四世出生】时间：【1577年04月12日】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【法国物理学家泊松出生】时间：【1781年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="丹麦--挪威国王（1588年―1648年在位）。弗雷德里克二世之子，即位初由母后摄政，1596年亲政，执政期间，采取措施促进工商业的发展，扩大哥本哈根的港口，建立新城市，废除汉萨同盟的特权。" />
+        <local:MyListItem Margin="30,2,-5,8"
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
+                    EventType="打开网页" EventData="http://baike.baidu.com/view/149668.htm" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
-<local:MyCard Title="事件：【法国天文学家查尔斯·梅西耶逝世】时间：【1817年04月12日】类型【死亡】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+
+<local:MyCard Title="事件：【德国教育家、幼儿园的创始人福禄培尔去世】时间：【1852年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="查尔斯·梅西耶（Charles Messier，1730—1817）是法国天文学家。他的成就在于给星云、星团和星系编上了号码，并制作了著名的“梅西耶星团星云列表”。" />
+        <local:MyListItem Margin="30,2,-5,8"
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
+                    EventType="打开网页" EventData="http://baike.baidu.com/view/97658.htm" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
-<local:MyCard Title="事件：【法国小说家爱弥尔·左拉出生】时间：【1840年04月12日】类型【死亡】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+
+<local:MyCard Title="事件：【庚子国变爆发，清廷向列强宣战】时间：【1900年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="爱弥尔·左拉（法语：émile Zola，1840年4月2日－1902年9月29日），法国著名的自然主义小说家和理论家，自然主义文学流派创始人与领袖。1902年9月28日，左拉在巴黎的寓所因煤气中毒逝世。" />
+        <local:MyListItem Margin="30,2,-5,8"
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
+                    EventType="打开网页" EventData="http://baike.baidu.com/view/488902.htm" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
-<local:MyCard Title="事件：【美国总统哈定拒绝参加国际联盟】时间：【1921年04月12日】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+
+<local:MyCard Title="事件：【法国哲学家让-保罗·萨特出生】时间：【1905年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="沃伦·甘梅利尔·哈定为美国第29位总统( 任期1921年3月4日--1923年8月2日)，生于俄亥俄州，卒于任期内。哈丁与弗洛伦斯·克林·德沃尔夫于1891年结婚，婚后，弗洛伦斯经营报纸来支持哈丁投身政界。" />
+        <local:MyListItem Margin="30,2,-5,8"
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
+                    EventType="打开网页" EventData="http://baike.baidu.com/view/161382.htm" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
-<local:MyCard Title="事件：【诺贝尔文学奖获得者泰戈尔来华讲学并访问中国】时间：【1924年04月12日】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="拉宾德拉纳特 · 泰戈尔（1861年—1941年），印度著名诗人、文学家、社会活动家、哲学家和印度民族主义者。1861年5月7日，拉宾德拉纳特·泰戈尔出生于印度加尔各答一个富有的贵族家庭。" />
-    </StackPanel>
-</local:MyCard>
+</ResourceDictionary>
