@@ -67,8 +67,6 @@ def process_files():
         if '</ResourceDictionary>' not in temp_content:
             temp_content += '\n</ResourceDictionary>'
         
-        # 5. 在结束标签前插入新内容
-        final_content = temp_content.replace('</ResourceDictionary>', f"{new_content}\n</ResourceDictionary>")
         
         # 6. 写入Custom.xaml
         with open('Custom.xaml', 'w', encoding='utf-8') as f:
