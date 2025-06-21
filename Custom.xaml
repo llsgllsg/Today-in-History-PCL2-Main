@@ -20,7 +20,7 @@
             Title="清理垃圾" Info="清理PCL使用时的垃圾" EventType="清理垃圾" Type="Clickable" />
 	<local:MyListItem  Margin="30,2,-5,8"
                     Logo="pack://application:,,,/images/Blocks/Fabric.png" Title="作者博客" Info="打开作者博客"
-                    EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+                    EventType="打开网页" EventData="https://llsgllsg.github.io/llsgllsgBK.github.io/" Type="Clickable" />
 </StackPanel>
 
 
