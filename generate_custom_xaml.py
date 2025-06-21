@@ -1,17 +1,39 @@
-#别看，deepseek生成的
 import requests
 import json
 import os
 import sys
 from datetime import datetime
 
+# 从 Todayinhistory 仓库中引入 today_in_history 函数
+def today_in_history(lang="zh-CN"):
+    now = datetime.now()
+    month = "%02d" % now.month
+    day = "%02d" % now.day
+
+    url = f"https://baike.baidu.com/cms/home/eventsOnHistory/{month}.json"
+    agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    headers = {
+        "host": "baike.baidu.com",
+        "referer": "https://www.baidu.com",
+        "User-Agent": agent,
+        "Accept-Language": lang,
+        "Accept": "text/html",
+        "Connection": "keep-alive",
+        "sec-ch-ua-platform": "Windows"
+    }
+
+    response = requests.get(url=url, headers=headers)
+    HTTP_OK = list(range(200, 300))
+    if response.status_code not in HTTP_OK:
+        raise KeyError(f"{'远程服务器返回错误' if lang == 'zh-CN' else 'Remote server returned an error'}:{response.status_code}")
+
+    meta = json.loads(response.content.decode("utf-8"))
+    return meta[f"{month}"][f"{month}{day}"]
+
 def get_today_events():
     """从API获取今日历史事件"""
-    api_url = "https://query.asilu.com/today/list"
     try:
-        response = requests.get(api_url, timeout=10)
-        response.raise_for_status()
-        return response.json()
+        return today_in_history()
     except Exception as e:
         print(f"获取API数据失败: {str(e)}")
         return None
@@ -28,7 +50,7 @@ def translate_event_type(event_type):
 def generate_xaml_content(api_data):
     """生成要追加的XAML内容"""
     xaml_entries = []
-    for event in api_data.get('data', [])[:5]:  # 只取前5个事件
+    for event in api_data[:5]:  # 只取前5个事件
         event_type = translate_event_type(event['type'])
         xaml_entry = f"""
 <local:MyCard Title="事件：【{event['title']}】时间：【{event['year']}年】类型【{event_type}】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
@@ -47,7 +69,7 @@ def process_files():
         # 1. 从API获取数据
         print("正在从API获取今日历史事件...")
         api_data = get_today_events()
-        if not api_data or api_data.get('code') != 200:
+        if not api_data:
             raise ValueError("获取API数据失败或数据格式不正确")
         
         # 2. 读取temp.xaml内容
