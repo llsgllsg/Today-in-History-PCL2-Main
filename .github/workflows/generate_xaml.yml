@@ -1,0 +1,56 @@
+name: Generate Custom XAML
+
+on:
+  schedule:
+    # 每天UTC时间16:30运行 (北京时间00:30)
+    - cron: '30 16 * * *'
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: '确认执行生成 (输入YES继续)'
+        required: true
+        default: 'NO'
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    # 手动运行时需要确认
+    if: |
+      github.event_name == 'schedule' ||
+      (github.event_name == 'workflow_dispatch' && 
+       inputs.confirm == 'YES')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: pip install requests
+        
+    - name: Run XAML Generator
+      run: python generate_custom_xaml.py
+      
+    - name: Upload result
+      if: always()
+      run: |
+        if [ $? -eq 0 ]; then
+          echo "::notice::Custom.xaml生成成功!"
+        else
+          echo "::error::生成失败!"
+        fi
+        
+    - name: Commit and push changes
+      if: success()
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add Custom.xaml
+        git commit -m "Auto-update Custom.xaml [skip ci]"
+        git push
