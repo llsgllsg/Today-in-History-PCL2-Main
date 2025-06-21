@@ -1,0 +1,31 @@
+name: Scheduled FTP Upload
+
+on:
+  schedule:
+    # 每天北京时间凌晨1点运行 (UTC时间17:00)
+    - cron: '0 17 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: pip install pyftpdlib
+      
+    - name: Run FTP Upload
+      env:
+        FTP_HOST: cn-nb1.rains3.com
+        FTP_PORT: 8021
+        FTP_USER: oDvjrdGc8bSdN5sf
+        FTP_PASS: ${{ secrets.FTP_PASSWORD }}
+      run: python ftp_upload.py
