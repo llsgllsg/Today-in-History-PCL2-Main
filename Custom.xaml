@@ -23,42 +23,62 @@
                     EventType="打开网页" EventData="https://llsgllsg.github.io/llsgllsgBK.github.io/" Type="Clickable" />
 </StackPanel>
 
-<local:MyCard Title="事件：【日本大名<a target="_blank" href="https://baike.baidu.com/item/%E7%BB%87%E7%94%B0%E4%BF%A1%E9%95%BF/65403">织田信长</a>逝世】时间：【1582年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【出生】时间：【662年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
-                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
-                    EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%BB%87%E7%94%B0%E4%BF%A1%E9%95%BF/65403" Type="Clickable" />
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
+                    Title="历史详情" 
+                    Info="打开百度百科"
+                    EventType="打开网页" 
+                    EventData="https://baike.baidu.com/item/%E6%9D%8E%E6%97%A6/27011" 
+                    Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【<a target="_blank" href="https://baike.baidu.com/item/%E5%BA%9A%E5%AD%90%E5%9B%BD%E5%8F%98">庚子国变</a>爆发，清廷向列强宣战】时间：【1900年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【出生】时间：【1805年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
-                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
-                    EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%BA%9A%E5%AD%90%E5%9B%BD%E5%8F%98" Type="Clickable" />
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
+                    Title="历史详情" 
+                    Info="打开百度百科"
+                    EventType="打开网页" 
+                    EventData="https://baike.baidu.com/item/%E7%BA%A0%E6%B3%BD%E4%BD%A9%C2%B7%E9%A9%AC%E5%BF%97%E5%B0%BC" 
+                    Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【法国哲学家<a target="_blank" href="https://baike.baidu.com/item/%E8%AE%A9-%E4%BF%9D%E7%BD%97%C2%B7%E8%90%A8%E7%89%B9">让-保罗·萨特</a>出生】时间：【1905年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【爆发】时间：【1848年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
-                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
-                    EventType="打开网页" EventData="https://baike.baidu.com/item/%E8%AE%A9-%E4%BF%9D%E7%BD%97%C2%B7%E8%90%A8%E7%89%B9" Type="Clickable" />
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
+                    Title="历史详情" 
+                    Info="打开百度百科"
+                    EventType="打开网页" 
+                    EventData="https://baike.baidu.com/item/%E6%B3%95%E5%9B%BD%E5%85%AD%E6%9C%88%E8%B5%B7%E4%B9%89" 
+                    Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【法国作家<a target="_blank" href="https://baike.baidu.com/item/%E5%BC%97%E6%9C%97%E7%B4%A2%E7%93%A6%E4%B8%9D%C2%B7%E8%90%A8%E5%86%88">弗朗索瓦·萨冈</a>出生】时间：【1935年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【诞生】时间：【1864年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
-                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
-                    EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%BC%97%E6%9C%97%E7%B4%A2%E7%93%A6%E4%B8%9D%C2%B7%E8%90%A8%E5%86%88" Type="Clickable" />
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
+                    Title="历史详情" 
+                    Info="打开百度百科"
+                    EventType="打开网页" 
+                    EventData="https://baike.baidu.com/item/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA" 
+                    Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【中国杰出军事家<a target="_blank" href="https://baike.baidu.com/item/%E7%BD%97%E7%82%B3%E8%BE%89/4834">罗炳辉</a>病逝】时间：【1946年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【逝世】时间：【1865年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
-                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" Title="历史详情" Info="打开百度百科"
-                    EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%BD%97%E7%82%B3%E8%BE%89/4834" Type="Clickable" />
+                    Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
+                    Title="历史详情" 
+                    Info="打开百度百科"
+                    EventType="打开网页" 
+                    EventData="https://baike.baidu.com/item/%E7%8E%8B%E8%8C%82%E8%8D%AB" 
+                    Type="Clickable" />
     </StackPanel>
 </local:MyCard>
