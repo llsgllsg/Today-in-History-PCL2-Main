@@ -23,62 +23,62 @@
                     EventType="打开网页" EventData="https://llsgllsg.github.io/llsgllsgBK.github.io/" Type="Clickable" />
 </StackPanel>
 
-<local:MyCard Title="事件：【逝世】时间：【-490年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【出生】时间：【1856年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E6%96%90%E9%87%8C%E5%BA%87%E5%BE%97%E6%96%AF" 
+                    EventData="https://baike.baidu.com/item/%E8%B7%AF%E6%98%93%E6%96%AF%C2%B7%E6%B2%99%E5%88%A9%E6%96%87" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【逝世】时间：【1332年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【出生】时间：【1875年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E5%AD%9B%E5%84%BF%E5%8F%AA%E6%96%A4%C2%B7%E5%9B%BE%E5%B8%96%E7%9D%A6%E5%B0%94" 
+                    EventData="https://baike.baidu.com/item/%E8%B4%B9%E8%BF%AA%E5%8D%97%E5%BE%B7%C2%B7%E4%BF%9D%E6%97%B6%E6%8D%B7" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【大片建筑发生火灾】时间：【1666年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【逝世】时间：【1877年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E5%9C%A3%E4%BF%9D%E7%BD%97%E5%A4%A7%E6%95%99%E5%A0%82/5208" 
+                    EventData="https://baike.baidu.com/item/%E8%B7%AF%E6%98%93-%E9%98%BF%E9%81%93%E5%A4%AB%C2%B7%E6%A2%AF%E4%B9%9F%E5%B0%94" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【出生】时间：【1778年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【逝世】时间：【1883年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E8%B7%AF%E6%98%93%C2%B7%E6%B3%A2%E6%8B%BF%E5%B7%B4" 
+                    EventData="https://baike.baidu.com/item/%E4%BC%8A%E5%87%A1%C2%B7%E8%B0%A2%E5%B0%94%E7%9B%96%E8%80%B6%E7%BB%B4%E5%A5%87%C2%B7%E5%B1%A0%E6%A0%BC%E6%B6%85%E5%A4%AB" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【，九月大屠杀开始】时间：【1792年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【出生】时间：【1900年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD" 
+                    EventData="https://baike.baidu.com/item/%E4%B9%8C%E5%B0%94%E9%9C%8D%C2%B7%E5%8D%A1%E5%8B%92%E7%93%A6%C2%B7%E5%90%89%E7%A7%91%E5%AE%81" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
