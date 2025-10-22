@@ -23,62 +23,62 @@
                     EventType="打开网页" EventData="https://llsgllsg.github.io/llsgllsgBK.github.io/" Type="Clickable" />
 </StackPanel>
 
-<local:MyCard Title="事件：【出生】时间：【1328年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【爆发内战】时间：【1383年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E6%9C%B1%E5%85%83%E7%92%8B/25626" 
+                    EventData="https://baike.baidu.com/item/%E8%91%A1%E8%90%84%E7%89%99" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【逝世】时间：【1422年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【建城】时间：【1575年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E6%9F%A5%E7%90%86%E5%85%AD%E4%B8%96/1644560" 
+                    EventData="https://baike.baidu.com/item/%E9%98%BF%E7%93%9C%E6%96%AF%E5%8D%A1%E8%BF%9E%E7%89%B9%E6%96%AF" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【发现麦哲伦海峡】时间：【1520年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【出生】时间：【1811年】类型【出生】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E6%96%90%E8%BF%AA%E5%8D%97%C2%B7%E9%BA%A6%E5%93%B2%E4%BC%A6" 
+                    EventData="https://baike.baidu.com/item/%E5%BC%97%E6%9C%97%E8%8C%A8%C2%B7%E6%9D%8E%E6%96%AF%E7%89%B9" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【逝世】时间：【1805年】类型【逝世】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【就任得克萨斯共和国首任总统】时间：【1836年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E9%9C%8D%E9%9B%B7%E8%82%96%C2%B7%E7%BA%B3%E5%B0%94%E9%80%8A" 
+                    EventData="https://baike.baidu.com/item/%E5%B1%B1%E5%A7%86%C2%B7%E4%BC%91%E6%96%AF%E9%A1%BF" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="事件：【中战胜法国】时间：【1805年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="事件：【首演】时间：【1883年】类型【事件】" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="30,2,-5,8"
                     Logo="https://main.cn-nb1.rains3.com/baidu.jpg" 
                     Title="历史详情" 
                     Info="打开百度百科"
                     EventType="打开网页" 
-                    EventData="https://baike.baidu.com/item/%E7%89%B9%E6%8B%89%E6%B3%95%E5%B0%94%E5%8A%A0%E6%B5%B7%E6%88%98" 
+                    EventData="https://baike.baidu.com/item/%E7%BA%BD%E7%BA%A6%E5%A4%A7%E9%83%BD%E4%BC%9A%E6%AD%8C%E5%89%A7%E9%99%A2" 
                     Type="Clickable" />
     </StackPanel>
 </local:MyCard>
